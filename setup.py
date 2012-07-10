@@ -24,9 +24,12 @@ setup(name='diazotheme.bootstrap',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'plone.app.theming',
+          'webcouturier.dropdownmenu',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
-      # -*- Entry points: -*-
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
       )
