@@ -1,13 +1,21 @@
 Changelog
 =========
 
-1.0a3 (unreleased)
-------------------
+0.3 (unreleased)
+----------------
 
 - Nothing changed yet.
 
 
-1.0a2 (2012-03-16)
+0.2 (2012-07-27)
+----------------
+
+- added PortletBelowContentE right below the main content
+- remove styling that cause listitem to be greyish
+
+
+0.1 (2012-07-24)
 ------------------
 
-- Initial release
+Initial Pypi release
+

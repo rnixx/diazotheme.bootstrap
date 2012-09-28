@@ -5,11 +5,9 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     >
 
+  <include package="Products.CMFCore" file="permissions.zcml" />
+
   <plone:static directory="static" type="theme" />
-
-  <!-- File System Directory Views registration -->
-  <cmf:registerDirectory name="diazotheme_bootstrap"/>
-
 
   <genericsetup:registerProfile
       name="default"
@@ -18,5 +16,7 @@
       description='Skin overrides for diazotheme.bootstrap'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
+
+   <include package=".portlet"/>
 
 </configure>

@@ -2,49 +2,8 @@
 body {
 }
 
-h1, h2, h3, h4, h5 {
-    margin-bottom:5px;
-}
-
-.navbar-fixed-top .container {
-    width:100%;
-
-}
-
-#container {
-    padding-left: 10px;
-    padding-right:10px;
-}
-
 .radio-widget {
     display:inline;
-}
-
-label span.required {
-    background: red;
-    height:7px;
-    width:7px;
-    display:inline-block;
-}
-
-.navbar-fixed-top .brand {
-    margin-left: 0;
-}
-
-.topbar h3 {
-    margin:0;
-}
-
-.topbar .nav a {
-    padding: 8px;
-}
-
-.topbar .dropdown-menu {
-    top:35px;
-}
-
-.span14 {
-    width:1170px;
 }
 
 #header {
@@ -55,35 +14,18 @@ label span.required {
     margin: 10px auto 0 auto;
 }
 
-.hero-unit {
-    background-image: url('../img/mapbg.png');
-    color:#fff;
-}
-
-.hero-unit h1 {
-    color:#fff;
-    font-size: 20pt;
-}
-
-#hero-img {
-    position:relative;
-    float:right;
-    top: -90px;
-    left:50px;
-    height:300px;
-    margin-bottom:-100px;
-}
-
-#companycode {
-    text-align:right;
-}
-
 label {
-    float:none;
+    float:none; 
+    display:inline;
 }
 
-dl.actionMenu {
-    margin-bottom:0px;
+.field label {
+   display:inline;
+   font-weight:bold;
+}
+
+label .required {
+   font-size:8px;
 }
 
 #edit-bar ul {
@@ -106,18 +48,6 @@ dl.actionMenu {
     text-align:right;
 }
 
-
-#content-core ul {
-  font-size:13px;
-}
-
-#content-core p {
-  font-size:13px;
-}
-
-#content-core dl {
-   font-size:13px;
-}
 
 #portletBelowContentManager {
     margin-top:20px;
@@ -166,7 +96,6 @@ dl.actionMenu {
 .navTree {
     list-style:none;
     margin:0px;
-    font-size: 14px;
 }
 
 .navTree .navTree {
@@ -221,12 +150,7 @@ input[type="submit"], input[type="button"], button {
     border-radius: 5px 5px 0 0 !important;
 }
 
-#content pre {
-    font-size:12px;
-}
-
 li {
-    color: #595959;
 }
 
 .dropdown-toggle .arrowDownAlternative {
@@ -235,7 +159,6 @@ li {
 
 #action-bar > .nav-tabs > li > a {
     padding: 0 5px;
-    font-size:12px;
     line-height:20px;
 }
 
@@ -244,7 +167,7 @@ li {
 }
 
 #main label {
-    display:inline;
+    display:inline-block;
 }
 
 .footer > .container {
@@ -259,9 +182,6 @@ li {
     min-width:150px;
 }
 
-div.listingBar {
-    font-size:12px;
-}
 
 div.listingBar .next,
 div.listingBar .current,
@@ -271,10 +191,6 @@ div.listingBar a {
 
 #content div.listingBar a:hover {
     color:#fff !important;
-}
-
-#content ol {
-    font-size: 13px;
 }
 
 #content p, #content table, #content dl, dl.portlet p, dl.portlet {
@@ -346,10 +262,6 @@ div.row {
     margin-left:20px;
 }
 
-a.btn:link, a.btn:visited {
-    color: #FFF;
-}
-
 #action-bar .dropdown-menu li a {
         display: block !important;
         line-height: 2em;
@@ -371,3 +283,93 @@ a.btn:link, a.btn:visited {
 .thumbnail {
     margin-top:7px;
 }
+
+#content-core fieldset {
+   padding-top:20px;
+}
+
+.faceted-top-search legend {
+   display:none;
+}
+
+.faceted-top-search .faceted-textwidget-place-all,
+.faceted-top-search .faceted-textwidget-place-current {
+    display:inline-block;
+}
+
+#content .faceted-top-search fieldset {
+   border:none;
+   padding:0;
+   margin:0;
+}
+
+#content dl.portalMessage  {
+    display:none;
+}
+
+.faceted-top-search input[type="text"] {
+    width:800px;
+    margin:5px 0;
+}
+
+#faceted-edit-addwidget {
+    max-height:400px;
+}
+
+.faceted-widget-edit {
+    max-height:400px;
+}
+
+#content fieldset { 
+   padding-left:20px;
+   padding-right:20px;
+   border:none;
+}
+
+.ArchetypesCalendarWidget select {
+    width:80px;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .faceted-top-search input[type="text"] {
+       width: 700px;
+    }
+}
+
+
+@media (max-width: 979px) {
+    .faceted-top-search input[type="text"] {
+       width: 550px;
+    }
+}
+
+@media (max-width: 767px) {
+    .faceted-top-search input[type="text"] {
+       width: 310px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faceted-top-search input[type="text"] {
+       width: 300px;
+    }
+}
+
+
+@media (min-width: 980px) {
+    .faceted-top-search input[type="text"] {
+       width: 750px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .faceted-top-search input[type="text"] {
+       width: 990px;
+    }
+}
+
+.dialog-wrapper fieldset {
+    padding:10px !important;
+}
+
+
